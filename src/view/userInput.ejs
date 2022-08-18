@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header.ejs') %>
+    <title> userInput </title>
+</head>
+<body>
+    <%- include('./navbar.ejs') %>
+        <h1>Créer Utilisateur</h1>
+        <form method="post" action='/addUser' id="form__submit">
+            <input type="text" class="username" name="username" placeholder="username">
+            <input type="text" class="street" name="street" placeholder="street">
+            <input type="text" class="city" name="city" placeholder="city">
+            <input type="number" class="phone" name="phone"  placeholder="phone">
+            <input type="email" class="email" name="email" placeholder="email">
+            <input type="submit" value="ok">
+        </form>
+        
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header') %>
+    <title>Demo</title>
+</head>
+<body>
+<%- include('./navbar.ejs') %>
+
+<h1 class="text-center"> vue de la page demo </h1>
+
+<% for (let i = 0; i < data.length; i++) { %>
+    <p> <%= data[i] %> </p>
+    <img src="/public/img/chaton.jpg" alt="image de chaton tigré">
+<% } %>
+
+</body>
+</html>

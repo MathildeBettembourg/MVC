@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header.ejs') %>
+    <title> Modification Utilisateur </title>
+</head>
+<body>
+    <%- include('./navbar.ejs') %>
+        <h1>Modifier</h1>
+        <form method="post" action='/modifUserById/<%= usersId.id%>' id="form__submit">
+            <input type="text" class="name" name="name" >
+            <input type="text" class="street" name="street" placeholder=<%= usersId.address.street%>>
+            <input type="text" class="city" name="city" placeholder=<%= usersId.address.city%>>
+            <input type="number" class="phone" name="phone"  placeholder=<%= usersId.phone%>>
+            <input type="email" class="email" name="email" placeholder=<%= usersId.email%>>
+            <input type="submit" value="ok">
+        </form>
+        
+</body>
+</html>

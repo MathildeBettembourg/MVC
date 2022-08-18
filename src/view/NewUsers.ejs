@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <%- include('./header.ejs') %>
+    <title> Users </title>
+</head>
+<body>
+    <%- include('./navbar.ejs') %>
+        <h1>Users</h1>
+    <p>
+    <% for (let i = 0; i < users.length; i++) { %>
+        <div class="card" style="width: 18rem;">
+            <div class="card-header"><%= users[i].name%></div>
+            <a href="/users/<%= users[i].id%>">Détails</a>
+            <a href="/NewUsers">Supprimer</a>
+        </div>        
+    <% } %>
+    </br>
+    </p>
+</body>
+</html>
